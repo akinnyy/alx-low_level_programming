@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	int a = 0;	
-	for (; a < 10 ; a++)
-		putchar('0' + a);
+	char a;
+	
+	for (a = 'z'; a >= 'a' ; a--)
+		putchar(a);
 	putchar('\n');
 	return (0);
-
 }
