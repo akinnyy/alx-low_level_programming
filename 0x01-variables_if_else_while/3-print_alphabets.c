@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main entry point
- *------- Print the Alphabet-----------
+ * main entry point '------- Print the Alphabet-----------'
+ *
  * Return: alway return 0
  *
  */
