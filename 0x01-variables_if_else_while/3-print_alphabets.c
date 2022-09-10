@@ -6,6 +6,7 @@
  *
  */
 int main(void)
+/*Declaration of Characters required for the function */
 {       
 	char a;
 
