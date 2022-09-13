@@ -3,9 +3,7 @@
 /**
  * main : Entry point of the program
  *
- * _putchar():This program prints every letter and symbol of the _putchar command
- *
- * It is also include the the main header file
+ * _putchar():This program prints any arg
  *
  * Return 0
  */
