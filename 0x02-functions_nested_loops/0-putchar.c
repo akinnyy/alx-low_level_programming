@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character out
- *
- * main : Entry point of the program
+ * main - Entry point
  *
  * Return 0
  *
- *Return "char" 
+ * _putchar - prints out its arg
+ *
+ * Return "char" 
  */
 /* Declaration of function */
-char _putchar();
-
+int _putchar();
 /*main entry point for the program*/
 int main(void)
 {
