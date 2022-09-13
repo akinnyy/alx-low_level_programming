@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ * _putchar - writes the character out
  * main : Entry point of the program
  *
  * _putchar():This program prints any arg
