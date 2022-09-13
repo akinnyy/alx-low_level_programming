@@ -7,7 +7,7 @@
  *
  * _putchar - prints out its arg
  *
- * Return "char" 
+ * Return '_'
  */
 /* Declaration of function */
 int _putchar();
