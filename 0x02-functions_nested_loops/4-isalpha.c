@@ -7,7 +7,7 @@
  * Return 1 (success) , 0 (failure)
  *
  */
-int _isalpha (int c)
+int test_isalpha (int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{

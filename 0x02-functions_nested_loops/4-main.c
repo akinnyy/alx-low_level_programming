@@ -6,11 +6,11 @@
  * @n: number to pass to _isalpha function
  *
  */
-void _isalpha(int n)
+void test_isalpha(int n)
 {
 	int r;
 
-	r = _isalpha(n);
+	r = test_isalpha(n);
 	_putchar(r + '0');
 	_putchar('\n');
 }
@@ -22,10 +22,10 @@ void _isalpha(int n)
  */
 int main(void)
 {
-	_isalpha('H');
-	_isalpha('o');
-	_isalpha('108');
-	_isalpha(';');
+	test_isalpha('H');
+	test_isalpha('o');
+	test_isalpha('108');
+	test_isalpha(';');
 	return(0);
 }
 
