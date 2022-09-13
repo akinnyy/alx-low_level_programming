@@ -7,9 +7,12 @@
  *
  * _putchar - prints out its arg
  *
- * Return '_'
  */
-/* Declaration of function */
+/** Declaration of function
+ *
+ * Return @c: The character to print
+ * 
+ */
 int _putchar();
 /*main entry point for the program*/
 int main(void)
