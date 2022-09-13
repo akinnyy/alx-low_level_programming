@@ -2,13 +2,18 @@
 
 /**
  * _putchar - writes the character out
+ *
  * main : Entry point of the program
  *
- * _putchar():This program prints any arg
- *
  * Return 0
+ *
+ *Return char 
+
  */
+
+/* Declaration of function */
 char _putchar();
+
 int main(void)
 {
 	_putchar('_');
