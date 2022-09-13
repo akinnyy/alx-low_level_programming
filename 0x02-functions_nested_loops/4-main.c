@@ -1,25 +1,31 @@
 #include "main.h"
 
 /**
- * main -check code
+ * test_isalpha-Test the _isalpha function
  *
- * Return: Always 0
+ * @n: number to pass to _isalpha function
  *
  */
-int _isalpha();
-int _putchar();
-int main(void)
+void _isalpha(int n)
 {
 	int r;
 
-	r = _isalpha('H');
-	_putchar(r + '0');
-	r = _isalpha('o');
-	_putchar(r + '0');
-	r = _isalpha(108);
-	_putchar(r + '0');
-	r = _isalpha(';');
+	r = _isalpha(n);
 	_putchar(r + '0');
 	_putchar('\n');
-	return (0);
 }
+
+/**
+ * main -check the code for the  Main file
+ *
+ * Return:Always 0
+ */
+int main(void)
+{
+	_isalpha('H');
+	_isalpha('o');
+	_isalpha('108');
+	_isalpha(';');
+	return(0);
+}
+
