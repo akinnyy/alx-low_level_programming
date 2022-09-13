@@ -7,13 +7,12 @@
  *
  * Return 0
  *
- *Return char 
-
+ *Return "char" 
  */
-
 /* Declaration of function */
 char _putchar();
 
+/*main entry point for the program*/
 int main(void)
 {
 	_putchar('_');
