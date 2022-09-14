@@ -6,7 +6,6 @@
  * @n: character for comparison
  *
  * Return: 1 for positives,0 if zero, -1 for negatives
- *
  */
 int print_sign(int n)
 {
