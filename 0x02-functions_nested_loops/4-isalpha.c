@@ -4,7 +4,7 @@
  *
  * @c>character for comparison
  *
- * Return 1 (success) , 0 (failure)
+ * Return: 1 (success) , 0 (failure)
  *
  */
 int _isalpha (int c)
