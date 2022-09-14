@@ -5,7 +5,7 @@
  * @n: the integer whose multiple sum we need
  * Return: 0
  */
-int main()
+int main(void)
 {
 	int i, j;
         int sum3 = 0;
@@ -24,6 +24,6 @@ int main()
 			}
 		}
 	}
-	printf("%d\n";(sum5+sum3));
+	printf("%d\n",(sum5+sum3));
 	return (0);
 }
