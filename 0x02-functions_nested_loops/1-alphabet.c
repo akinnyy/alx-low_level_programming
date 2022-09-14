@@ -7,10 +7,7 @@
  *
  * Return: always 0
  *
- * Return: always 0
- *
  */
-char _putchar();
 
 void print_alphabet()
 {
