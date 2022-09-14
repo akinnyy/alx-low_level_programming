@@ -1,8 +1,7 @@
 #include"main.h"
 /**
- * jacK_bauer-The main function
+ * jacK_bauer - The main thing
  */
-/* jack_bauer- The main thing*/
 void jack_bauer(void)
 {
 	int i;
