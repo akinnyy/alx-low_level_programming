@@ -1,29 +1,23 @@
 #include <stdio.h>
+
 /**
  * main - main function
  *
- * @n: the integer whose multiple sum we need
- * Return: 0
+ * Return: always 0
+ * 
  */
 int main(void)
 {
-	int i, j;
-        int sum3 = 0;
-        int sum5 = 0;
-
-	for (i = 0; i < 1024; i++)
+	int a;
+	int b = 0;
+	
+	for (a = 0; a < 1024; a++)
 	{
-		for (j = 0; j < 1024; j++)
+		if (a % 3 == 0 || a % 5 == 0)
 		{
-			if (j % 5 == 0)
-			{
-				sum5 = j + sum5;
-			} else if (i % 3 == 0)
-			{
-				sum3 = i + sum3;
-			}
+			b += a;
 		}
 	}
-	printf("%d\n",(sum5+sum3));
+	printf("%d\n", b);
 	return (0);
 }
