@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * jacK_bauer - The main function
+ * jacK_bauer- The main function
  *
  */
 void jack_bauer(void)
