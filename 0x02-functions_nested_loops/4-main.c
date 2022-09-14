@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * test_isalpha-Test the _isalpha function
+ * _isalpha-Test the _isalpha function
  *
- * @n: number to pass to _isalpha function
+ * @c: number to pass to _isalpha function
  *
  */
-void test_isalpha(int n)
+void _isalpha(int c)
 {
 	int r;
 
-	r = test_isalpha(n);
+	r = _isalpha(c);
 	_putchar(r + '0');
 	_putchar('\n');
 }
@@ -22,10 +22,10 @@ void test_isalpha(int n)
  */
 int main(void)
 {
-	test_isalpha('H');
-	test_isalpha('o');
-	test_isalpha('108');
-	test_isalpha(';');
+	_isalpha('H');
+	_isalpha('o');
+	_isalpha(108);
+	_isalpha(';');
 	return(0);
 }
 

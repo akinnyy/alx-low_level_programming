@@ -8,9 +8,7 @@
  * _putchar - prints out its arg
  *
  */
-/* Return @c: The character to print : function is declared */
-int _putchar();
-/*main entry point for the program*/
+
 int main(void)
 {
 	_putchar('_');
