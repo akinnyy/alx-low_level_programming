@@ -5,7 +5,7 @@
  *
  * @n:integer specifying the number of times to print char
  */
-void print_diagonal(int size)
+void print_triangle(int size)
 {
 	int i;
 	int j;
