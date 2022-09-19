@@ -3,7 +3,7 @@
 /**
  * reset_to_98 -  The main function that resets
  *
- * @n:The integer whose value is tobe reset
+ * @n:The integer whose value is to be reset
  *
  * Return:Nothing
  */
