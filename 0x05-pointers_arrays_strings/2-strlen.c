@@ -5,12 +5,15 @@
  *
  * @s:The string whose length is required
  *
- * Return:0
+ * Return:length o the string
  */
 int _strlen(char *s)
 {
-	int len;
+	int j;
 
-	len = strlen(*s);
-	return (len)
+	for (j = 0;s[j] != '\0'; j++)
+	{
+		
+	}
+	return (j);
 }
