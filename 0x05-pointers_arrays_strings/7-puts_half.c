@@ -1,7 +1,7 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
- * puts2 - prints string in reverse
+ * puts_half - prints string in reverse
  *
  * @str:The input string
  *
@@ -10,8 +10,13 @@
 void puts_half(char *str)
 {
 	int j;
+	int err = 0;
 
-	for (j = 0; j < _strlen(str) / 2; j++)
+	if (strlen(str) % 2 != 0)
+	{
+		err =+ 1;
+	}
+	for (j = _strlen(str + err) / 2; j < strlen(str); j++)
 	{
 		_putchar(str[j]);
 	}
