@@ -7,7 +7,7 @@
  *
  * Return:Nothing
  */
-void _print_rev(char *s)
+void print_rev(char *s)
 {
 	int j,k, string;
 
