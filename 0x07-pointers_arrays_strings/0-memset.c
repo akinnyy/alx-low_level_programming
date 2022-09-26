@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  *
@@ -13,9 +13,7 @@
  *      * Return: char value of s
  *
  *       */
-
 char *_memset(char *s, char b, unsigned int n)
-
 {
 
 		unsigned int i;
