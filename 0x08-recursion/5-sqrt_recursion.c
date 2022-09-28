@@ -1,18 +1,36 @@
 #include "main.h"
-
 /**
- * _pow_recursion - main function that returns int x raised to int y
+ * guess - helps decide if i'm right
  *
- * @x: The base number
- * @y: The power number
+ * @i: integer to guess
+ * @n: integer to get root
  *
- * Return: the value of x raised to y
+ * Return: value of root
  *
  */
-int _pow_recursion(int x, int y)
+int guess(int i, int n)
 {
-	if (y < 0)
+	int j;
+
+	if (i * i != n)
+	{
+		if (i > n)
+			return (-1);
+		j = guess(i + 1, n);
+		return (j + 1);
+	}
+}
+/**
+ * _sqrt_recursion - main function that returns the square root of a num
+ * @n: The num
+ * Return: the square root of the number
+ */
+int _sqrt_recursion(int n)
+{
+	int i = 0;
+
+	if (guess(i, n) == n && n != 1)
 		return (-1);
 	else
-		return (x * _pow_recursion(x, (y - 1)));
+		return (guess(i, n));
 }
