@@ -5,15 +5,15 @@
  *
  * @n: The given number
  *
- * Return : the factorial
+ * Return: -1 (negative number), 1 ( null value), integer (positive number)
  *
  */
-int factorial(int n)
+int factorial(int n)/*Returns the factorial of a given number*/
 {
 	if (n < 0)
 		return (-1);
 	else if (n == 0)
 		return (1);
 	else
-		return (n *factorial(n - 1));
+		return (n * factorial(n - 1));
 }
