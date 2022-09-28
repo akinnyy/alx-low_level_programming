@@ -19,6 +19,7 @@ int guess(int i, int n)
 		j = guess(i + 1, n);
 		return (j + 1);
 	}
+	return (0);
 }
 /**
  * _sqrt_recursion - main function that returns the square root of a num
