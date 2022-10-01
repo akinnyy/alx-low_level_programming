@@ -4,13 +4,9 @@
 
 /**
  * main - main function
- *
- * @argc: argument c 
- *
+ * @argc: argument c
  * @argv: vector of arguments
- *
  * Return: always 0
- *
  */
 int main(int argc, char  *argv[])
 {
