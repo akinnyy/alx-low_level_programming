@@ -5,46 +5,34 @@
  * main - main function
  * @argc: argument c
  * @argv: vector of arguments
- * Return: always 0
+ * Return: always 0 (Success),1 (Error)
  */
 int main(int argc, char  *argv[])
 {
-	int coins = 0;
+	int num, j, result;
+	int coins[] = {25, 10, 5, 2, 1};
 
-	if (argc == 2)
+	if (argc != 2)
 	{
-		if (strchr(argv[argc - 1], '-'))
-		{
-			printf("0\n");
-			return (1);
-		}
-		int money;
+		printf("Error\n");
+		return (1);
+	}
+	num = atoi(argv[1]);
+	result = 0;
 
-		money = atoi(argv[argc - 1]);
-		while (money > 0)
-		{
-			if (money % 25 == 0)
-			{
-				money -= 25;
-			}
-			else if (money % 10 == 0)
-			{
-				money -= 10;
-			} else if (money % 5 == 0)
-			{
-				money -= 5;
-			} else if (money % 2 == 0)
-			{
-				money -= 2;
-			} else
-			{
-				money--;
-			}
-			coins++;
-		}
-		printf("%d\n", coins);
+	if (num < 0)
+	{
+		printf("0\n");
 		return (0);
 	}
-	printf("Error\n");
-	return (1);
+	for (j = 0; j < 5 && num >= 0; j++)
+	{
+		while (num >= coins[j])
+		{
+			result++;
+			num -= coins[j];
+		}
+	}
+	printf("%d\n", result);
+	return (0);
 }
