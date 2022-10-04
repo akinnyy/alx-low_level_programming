@@ -2,39 +2,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * alloc_grid -  The main function
+ * free_grid -  The main function
  *
- * @width: first parameter
+ * @grid: grid tocheck
  *
- * @height: second parameter
+ * @height: height of the grid
  *
- * Return: value
+ * Return: Nothing
  */
-int **alloc_grid(int width, int height)
+void free_grid(int **grid, int height)
 {
-	int **t;
 	int i;
-	int j;
 
-	if (width <= 0 || height <= 0)
-		return (NULL);
-	t = (int **)malloc(sizeof(int *) * height);
-	if (t == NULL)
-		return (NULL);
+	if (height <= 0)
+		return;
+	if (grid == NULL)
+		return;
 	for (i = 0; i < height; i++)
 	{
-		t[i] = (int *)malloc(sizeof(int) * width);
+		free(grid[i]);
 	}
-	if (t[i] == NULL)
-	{
-		for (j = 0; j < i; j++)
-		{
-			free(t[j]);
-		}
-		free(t);
-	}
-	for  (i = 0; i < height; i++)
-		for (j = 0; j < width; j++)
-			t[i][j] = 0;
-	return (t);
+	free(grid);
 }
