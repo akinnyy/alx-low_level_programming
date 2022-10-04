@@ -11,10 +11,17 @@
 char *_strdup(char *str)
 {
 	char *karat;
+	int i;
+	int j = 0;
 
 	if (str == NULL)
 		return (NULL);
-	karat = malloc(sizeof(str));
-		karat = str;
+	while (str[j] != '\0')
+		j++;
+	karat = malloc(sizeof(char) * j + 1);
+	if (karat == NULL)
+		return (NULL);
+	for (i = 0; i < j; i++)
+		karat[i] = str[i];
 	return (karat);
 }
