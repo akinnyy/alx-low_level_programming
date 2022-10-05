@@ -1,86 +1,44 @@
-i#include "main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * helper -  The main function
+ * argstostr -  The main function
  *
- * @word: THe word
- * @len:The length
- * @str:The string
- * @s:The character
+ * @ac: THe counter
+ * @av:The charactor
  *
  * Return: value
  */
 char *argstostr(int ac, char **av)
-
 {
+	int size;
+	char *s;
+	int i;
+	int j;
+	int k;
 
-		int size;
-
-			char *s;
-
-				int i;
-
-					int j;
-
-						int k;
-
-
-
-							if (ac == 0 || av == NULL)
-
-										return (NULL);
-
-
-
-								for (i = 0; i < ac; i++)
-
-										{
-
-													for (j = 0; av[i][j] != '\0'; j++)
-
-																	size++;
-
-														}
-
-
-
-									size += (ac + 1);
-
-										s = malloc(sizeof(char) * size);
-
-											if (s == NULL)
-
-														return (NULL);
-
-												k = 0;
-
-													for (i = 0; i < ac; i++)
-
-															{
-
-																		for (j = 0; av[i][j] != '\0'; j++)
-
-																					{
-
-																									s[k] = av[i][j];
-
-																												k++;
-
-																														}
-
-																				s[k] = '\n';
-
-																						k++;
-
-																							}
-
-
-
-														s[k] = '\0';
-
-
-
-															return (s);
-
+	if (ac == 0 || av == NULL)
+		return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+			size++;
+	}
+	size += (ac + 1);
+	s = malloc(sizeof(char) * size);
+	if (s == NULL)
+		return (NULL);
+	k = 0;
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			s[k] = av[i][j];
+			k++;
+		}
+		s[k] = '\n';
+		k++;
+	}
+	s[k] = '\0';
+	return (s);
 }
