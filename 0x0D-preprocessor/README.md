@@ -1,0 +1,1 @@
+Here we look at the C-Preprocessor. It is common knowledge that before  codes are passed to the compiler, the codes are processed through the expansion of certain macros,replacements, deletions of comments and other manipulations in this projects.
