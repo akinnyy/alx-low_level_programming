@@ -26,8 +26,8 @@ listint_t *reverse_recur(listint_t *first, listint_t *second)
 	first->next = ptr->next;
 	if (first != ptr && second != first)
 		second = reverse_recur(second, first);
-		ptr->next = second;
-		return (ptr);
+	ptr->next = second;
+	return (ptr);
 }
 /**
  * reverse_listint - reverses a listint list
