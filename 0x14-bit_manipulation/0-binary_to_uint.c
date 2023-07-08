@@ -3,7 +3,7 @@
  * binary_to_uint - binary to uint
  * @b: string to convert
  *
- * return: unsigned int
+ * Return: unsigned int
  */
 unsigned int binary_to_uint(const char *b)
 {	
